@@ -24,5 +24,9 @@
     "pretty-time": "^1.1.0",
     "wabt": "^1.0.0",
     "webassemblyjs": "^1.7.4"
-  }
+  },
+  "engines": {
+    "node": ">=10.8.0"
+  },
+  "engineStrict": true
 }
