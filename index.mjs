@@ -1,10 +1,10 @@
-var pretty = require('pretty-time');
+const pretty = require('pretty-time');
 
 import {entryPoint} from "./main.wasm";
 
-var timeit = (func) => {
-    var start = process.hrtime();
-    var result = func();
+const timeit = (func) => {
+    const start = process.hrtime();
+    const result = func();
     console.log("Elapsed: " + pretty(process.hrtime(start)));
     return result;
 };
