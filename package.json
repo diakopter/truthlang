@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "run": "node --experimental-modules --loader @wasm-tool/node index.mjs"
+    "build": "node index.js",
+    "run": "node --no-warnings --experimental-modules --loader @wasm-tool/node index.mjs"
   },
   "repository": {
     "type": "git",
