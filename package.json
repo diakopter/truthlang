@@ -26,7 +26,7 @@
     "webassemblyjs": "^1.7.4"
   },
   "engines": {
-    "node" : ">=10.8.0"
+    "node": ">=10.8.0"
   },
   "engineStrict": true
 }
