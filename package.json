@@ -1,0 +1,22 @@
+{
+  "name": "truthlang",
+  "version": "0.0.1",
+  "description": "minimal typed functional language for wasm",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/diakopter/truthlang.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/diakopter/truthlang/issues"
+  },
+  "homepage": "https://github.com/diakopter/truthlang#readme",
+  "dependencies": {
+    "webassemblyjs": "^1.7.4"
+  }
+}
