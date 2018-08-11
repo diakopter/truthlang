@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/diakopter/truthlang#readme",
   "dependencies": {
+    "@wasm-tool/node": "0.0.2",
     "webassemblyjs": "^1.7.4"
   }
 }
