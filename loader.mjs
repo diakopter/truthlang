@@ -84,6 +84,7 @@ export async function dynamicInstantiate(url) {
 
 export function resolve(specifier, base, defaultResolver) {
   const ext = path.extname(specifier);
+  internalDefaultResolver = defaultResolver;
 
   if (ext === ".wasm") {
     const resolved = new URL(specifier, base);
