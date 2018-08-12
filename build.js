@@ -30,25 +30,23 @@ const pp = cpp.create( {
     completion_func : function(processed) {
         wat_processed = processed;
     },
-    comment_stripper : null
+//    comment_stripper : function() {}
  } );
 
 const startWat = "truth.wat";
 
-console.log("got 1");
 const inputSrc = readFileSync(startWat, "utf8");
-console.log("got startsrc " + inputSrc);
 var source = pp.run(inputSrc);
-console.log('got source' + source);
 while (wat_processed === "not_done") {
-    
+    sleep(100);
 }
 if (wat_processed === "errored") {
     throw "errored: " + pp_error;
 }
 
-writeFileSync("main.wat", wat_processed); // cache output for debugging/fun
-const wasmModule = wabt.parseWat(inputWat, wat_processed);
+const mainWat = "main.wat";
+writeFileSync(mainWat, wat_processed); // cache output for debugging/fun
+const wasmModule = wabt.parseWat(mainWat, wat_processed);
 
 const { buffer } = wasmModule.toBinary({});
 
