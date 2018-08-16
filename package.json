@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "node build.js",
-    "run": "node --no-warnings --experimental-modules --print-opt-code --code-comments -r mjs-require --loader './loader.mjs' index.mjs"
+    "run": "node --no-warnings --experimental-modules -r mjs-require --loader './loader.mjs' index.mjs"
   },
   "repository": {
     "type": "git",
